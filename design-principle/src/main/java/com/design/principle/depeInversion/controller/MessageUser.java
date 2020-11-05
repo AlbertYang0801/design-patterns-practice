@@ -27,7 +27,6 @@ public class MessageUser {
         messageUser.receiver(new EmailUserImpl());
         messageUser.receiver(new PhoneUserImpl());
     }
-
-
+    
 
 }
