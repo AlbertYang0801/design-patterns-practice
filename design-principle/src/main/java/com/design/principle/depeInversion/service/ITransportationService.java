@@ -6,6 +6,6 @@ package com.design.principle.depeInversion.service;
  */
 public interface ITransportationService {
 
-    public String way();
+    String way();
 
 }
