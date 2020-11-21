@@ -10,6 +10,7 @@ import com.design.principle.Interfaceisolation.isolation.service.PlainService;
  * @date 2020/11/8 00:30
  */
 public class PlainServiceImpl implements ChangeTravelChargesService, PlainService {
+
     @Override
     public int getFare() {
         System.out.println("飞机的出行费用为2000元");
@@ -21,4 +22,6 @@ public class PlainServiceImpl implements ChangeTravelChargesService, PlainServic
         System.out.println("飞机的基建费用是50元");
         return 50;
     }
+
+
 }

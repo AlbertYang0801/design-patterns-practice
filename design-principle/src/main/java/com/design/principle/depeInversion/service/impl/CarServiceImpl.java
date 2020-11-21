@@ -9,8 +9,11 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public class CarServiceImpl implements ITransportationService {
+
     @Override
     public String way() {
         return "汽车，出行，走在公路上";
     }
+
+
 }

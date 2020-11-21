@@ -10,6 +10,7 @@ import com.design.principle.Interfaceisolation.isolation.service.ChangeTravelCha
  * @date 2020/11/8 00:30
  */
 public class CarServiceImpl implements ChangeTravelChargesService, CarService {
+
     @Override
     public int getFare() {
         System.out.println("汽车的出行费用是100元");
@@ -21,5 +22,6 @@ public class CarServiceImpl implements ChangeTravelChargesService, CarService {
         System.out.println("汽车的过路费是10元");
         return 10;
     }
+
 
 }

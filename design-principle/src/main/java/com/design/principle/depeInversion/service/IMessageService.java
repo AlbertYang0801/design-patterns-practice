@@ -6,6 +6,9 @@ package com.design.principle.depeInversion.service;
  */
 public interface IMessageService {
 
+    /**
+     * 发送消息
+     */
     void sendMessage();
 
 

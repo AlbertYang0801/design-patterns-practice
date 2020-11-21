@@ -29,4 +29,6 @@ public class PlainServiceImpl implements TravelChargesService {
         System.out.println("飞机的基建费用是50元");
         return 50;
     }
+
+
 }

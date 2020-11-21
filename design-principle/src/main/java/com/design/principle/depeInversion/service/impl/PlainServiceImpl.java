@@ -9,8 +9,11 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public class PlainServiceImpl implements ITransportationService {
+
     @Override
     public String way() {
         return "飞机，在天上飞";
     }
+
+
 }

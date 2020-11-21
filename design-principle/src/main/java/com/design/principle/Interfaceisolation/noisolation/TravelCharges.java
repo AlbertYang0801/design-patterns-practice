@@ -15,7 +15,6 @@ public class TravelCharges {
 
     /**
      * 获取汽车出行费用
-     * @param travelChargesService
      */
     public void getCarTravelCharges(TravelChargesService travelChargesService){
         int fare = travelChargesService.getFare();
@@ -25,7 +24,6 @@ public class TravelCharges {
 
     /**
      * 获取飞机出行费用
-     * @param travelChargesService
      */
     public void getPlainTravelCharges(TravelChargesService travelChargesService){
         int fare = travelChargesService.getFare();

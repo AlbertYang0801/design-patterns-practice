@@ -28,7 +28,6 @@ public class TravelCharges {
         int fare = plainService.getFare();
         int infrastructure = plainService.getInfrastructure();
         System.out.println("飞机出行费用为："+(fare+infrastructure));
-
     }
 
     public static void main(String[] args) {
