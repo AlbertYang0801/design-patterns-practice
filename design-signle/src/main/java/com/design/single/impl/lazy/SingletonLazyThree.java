@@ -1,4 +1,4 @@
-package com.design.single.lazy;
+package com.design.single.impl.lazy;
 
 import java.util.Objects;
 

@@ -1,4 +1,4 @@
-package com.design.single.hungry;
+package com.design.single.impl.hungry;
 
 /**
  * 饿汉式实现01_静态变量
