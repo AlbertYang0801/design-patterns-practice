@@ -16,7 +16,7 @@ public class SingletonLazyOne {
     private static SingletonLazyOne INSTANCE;
 
     /**
-     * 懒加载，对象为空时则创建，以时间换空间
+     * 懒加载，判断对象为空时则创建，以时间换空间
      */
     public static SingletonLazyOne getInstance() {
         if (Objects.isNull(INSTANCE)) {

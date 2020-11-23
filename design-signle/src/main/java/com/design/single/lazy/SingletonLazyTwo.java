@@ -17,6 +17,7 @@ public class SingletonLazyTwo {
 
     /**
      * 懒加载，对象为空时则创建，以时间换空间
+     * 方法同步，保证线程安全，但是效率低下
      */
     public static synchronized SingletonLazyTwo getInstance() {
         if (Objects.isNull(INSTANCE)) {

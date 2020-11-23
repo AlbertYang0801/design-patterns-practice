@@ -21,6 +21,9 @@ public class SingletonEnum {
 
 }
 
+/**
+ * 每一个枚举类型及其定义的枚举变量在JVM中都是唯一的特性，保证了枚举对象的唯一性。
+ */
 
 enum Singleton {
     /**
