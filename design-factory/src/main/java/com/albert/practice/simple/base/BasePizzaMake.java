@@ -1,4 +1,4 @@
-package com.albert.factory.simple.base;
+package com.albert.practice.simple.base;
 
 /**
  * 披萨的抽象类

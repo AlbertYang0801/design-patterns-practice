@@ -1,8 +1,8 @@
-package com.albert.factory.simple.unsolved;
+package com.albert.practice.simple.unsolved;
 
-import com.albert.factory.simple.base.BasePizzaMake;
-import com.albert.factory.simple.base.CheesePizza;
-import com.albert.factory.simple.base.ChinaPizza;
+import com.albert.practice.simple.base.BasePizzaMake;
+import com.albert.practice.simple.base.CheesePizza;
+import com.albert.practice.simple.base.ChinaPizza;
 
 /**
  * 订购披萨

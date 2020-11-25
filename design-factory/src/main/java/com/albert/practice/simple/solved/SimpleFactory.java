@@ -1,8 +1,8 @@
-package com.albert.factory.simple.solved;
+package com.albert.practice.simple.solved;
 
-import com.albert.factory.simple.base.BasePizzaMake;
-import com.albert.factory.simple.base.CheesePizza;
-import com.albert.factory.simple.base.ChinaPizza;
+import com.albert.practice.simple.base.BasePizzaMake;
+import com.albert.practice.simple.base.CheesePizza;
+import com.albert.practice.simple.base.ChinaPizza;
 
 /**
  * 简单工厂
@@ -22,7 +22,6 @@ public class SimpleFactory {
         //在简单工厂里进行披萨类型的判断并创建对应披萨。
         if (pizzaType == 0) {
             System.out.println("开始订购芝士披萨");
-
             basePizzaMake = new CheesePizza();
         }
         if (pizzaType == 1) {

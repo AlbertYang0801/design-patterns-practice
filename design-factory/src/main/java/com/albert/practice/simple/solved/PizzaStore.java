@@ -1,4 +1,4 @@
-package com.albert.factory.simple.solved;
+package com.albert.practice.simple.solved;
 
 /**
  * 披萨商店，相当于购买披萨的客户端

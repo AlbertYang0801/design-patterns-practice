@@ -1,6 +1,6 @@
-package com.albert.factory.simple.solved;
+package com.albert.practice.simple.solved;
 
-import com.albert.factory.simple.base.BasePizzaMake;
+import com.albert.practice.simple.base.BasePizzaMake;
 
 import java.util.Objects;
 
