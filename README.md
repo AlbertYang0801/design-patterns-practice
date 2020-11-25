@@ -36,6 +36,8 @@
 
 * 单例模式 (design-single)
 
+* 工厂模式 (design-factory)
+
 
 #### 2.结构型模式
 
