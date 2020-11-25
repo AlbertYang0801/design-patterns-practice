@@ -20,7 +20,7 @@ public class SingletonHungryTwo {
         INSTANCE = new SingletonHungryTwo();
     }
 
-    public SingletonHungryTwo getInstance() {
+    public static SingletonHungryTwo getInstance() {
         return INSTANCE;
     }
 
