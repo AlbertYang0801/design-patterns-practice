@@ -7,6 +7,9 @@ package com.albert.practice.absfactory.headset;
  */
 public interface BaseHeadset {
 
+    /**
+     * 制作耳机产品
+     */
     void makeHeadSet();
 
 
