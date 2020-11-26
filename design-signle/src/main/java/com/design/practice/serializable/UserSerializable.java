@@ -1,4 +1,4 @@
-package com.design.practice.problem.serializable;
+package com.design.practice.serializable;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
