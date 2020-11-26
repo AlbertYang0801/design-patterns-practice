@@ -18,6 +18,7 @@
         <module>../design-principle</module>
         <module>../design-signle</module>
         <module>../design-factory</module>
+        <module>../design-prototype</module>
     </modules>
 
     <properties>

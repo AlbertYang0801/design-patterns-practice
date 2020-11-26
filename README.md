@@ -38,6 +38,10 @@
 
 * 工厂模式 (design-factory)
 
+* 抽象工厂模式 (design-factory)
+
+* 原型模式 (design-prototype)
+
 
 #### 2.结构型模式
 

@@ -16,7 +16,7 @@ public class PersonHand {
 
     public void personHeadOut(){
         //握手
-        hand.handOut();;
+        hand.handOut();
     }
 
     public static void main(String[] args) {
