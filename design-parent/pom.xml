@@ -19,6 +19,7 @@
         <module>../design-signle</module>
         <module>../design-factory</module>
         <module>../design-prototype</module>
+        <module>../design-builder</module>
     </modules>
 
     <properties>
