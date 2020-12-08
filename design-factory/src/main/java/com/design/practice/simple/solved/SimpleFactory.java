@@ -14,8 +14,6 @@ public class SimpleFactory {
 
     /**
      * 根据披萨类型创建披萨对象
-     * @param pizzaType
-     * @return
      */
     public BasePizzaMake createPizza(Integer pizzaType) {
         BasePizzaMake basePizzaMake = null;

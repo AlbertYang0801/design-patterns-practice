@@ -24,7 +24,6 @@ public abstract class BaseFactory {
 
     /**
      * 制作耳机
-     * @return
      */
     public abstract BaseHeadset makeHeadset();
 
