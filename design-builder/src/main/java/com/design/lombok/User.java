@@ -2,6 +2,7 @@ package com.design.lombok;
 
 /**
  * 实现lombok的@builder注解，建造者模式功能
+ * 实现链式调用
  *
  * @author Albert
  * @date 2020/12/29 上午11:37
@@ -31,6 +32,9 @@ public class User {
                 '}';
     }
 
+    /**
+     * 产品的具体建造者类
+     */
     public static class UserExampleBuilder {
 
         private String id;
@@ -75,3 +79,8 @@ public class User {
 
 
 }
+
+
+/**
+ * 本类将产品类user和具体建造者类UserExampleBuilder分开，解耦合。
+ */
