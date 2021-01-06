@@ -13,12 +13,18 @@ public class User {
     private String name;
     private int age;
 
+    /**
+     * 产品类的有参构造
+     */
     public User(final String id, final String name, final int age) {
         this.id = id;
         this.name = name;
         this.age = age;
     }
 
+    /**
+     * 创建一个建造者
+     */
     public static User.UserExampleBuilder builder() {
         return new User.UserExampleBuilder();
     }
@@ -56,6 +62,10 @@ public class User {
             return this;
         }
 
+        /**
+         * 建造者提供的完成建造方法
+         * @return
+         */
         public User build() {
             return new User(this.id, this.name, this.age);
         }
