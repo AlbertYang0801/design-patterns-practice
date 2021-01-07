@@ -1,6 +1,5 @@
 package com.design.practice.solved;
 
-import com.design.practice.unsolved.CommonHouse;
 
 /**
  * @author Albert
