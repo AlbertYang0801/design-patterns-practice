@@ -48,6 +48,9 @@
 
 >浅拷贝和深拷贝
 
+* 建造者模式 (design-builder)
+
+>手写lombok表达式的@builder注解源码
 
 #### 2.结构型模式
 
