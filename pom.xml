@@ -7,7 +7,7 @@
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>2.3.3.RELEASE</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <relativePath/>
     </parent>
     <groupId>com.albert</groupId>
     <artifactId>design-parent</artifactId>
@@ -15,11 +15,12 @@
     <version>1.0-SNAPSHOT</version>
 
     <modules>
-        <module>../design-principle</module>
-        <module>../design-signle</module>
-        <module>../design-factory</module>
-        <module>../design-prototype</module>
-        <module>../design-builder</module>
+        <module>design-principle</module>
+        <module>design-signle</module>
+        <module>design-factory</module>
+        <module>design-prototype</module>
+        <module>design-builder</module>
+        <module>design-strategy</module>
     </modules>
 
     <properties>
