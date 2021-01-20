@@ -1,5 +1,7 @@
 package com.design.practice.solved;
 
+import org.springframework.stereotype.Component;
+
 import java.math.BigDecimal;
 
 /**
@@ -8,6 +10,7 @@ import java.math.BigDecimal;
  * @author Albert
  * @date 2021/1/20 上午11:00
  */
+@Component
 public class VipBuyer implements Buyer {
     @Override
     public BigDecimal getDiscountPrice(BigDecimal orderPrice) {

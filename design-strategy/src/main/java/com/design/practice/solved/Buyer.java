@@ -7,7 +7,7 @@ import java.math.BigDecimal;
  * @author Albert
  * @date 2021/1/20 上午10:57
  */
-public interface Buyer {
+public interface Buyer{
 
     /**
      * 获取折扣价格
