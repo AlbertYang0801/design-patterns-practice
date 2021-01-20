@@ -9,6 +9,7 @@
 out
 gen
 target/
+./target/
 logs/
 
 .mvn/
