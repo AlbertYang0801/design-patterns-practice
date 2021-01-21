@@ -12,7 +12,7 @@ import java.math.BigDecimal;
 public class Cashier {
 
     /**
-     * 组合方式，集成策略类
+     * 组合方式，集成策略类（符合合成复用原则）
      */
     private Buyer buyer;
 

@@ -22,7 +22,7 @@ public class BuyerFactory {
     public static Buyer getBuyer(User user) {
         //根据会员类型获取策略类对象
         String buyerClassName = BuyerEnum.getBuyerClassNameByType(user.getBuyerType());
-        System.out.println("对应的策略类为：" + buyerClassName);
+        System.out.println("对应的策略类名称为：" + buyerClassName);
         //从容器上下文中获取策略类
         return (Buyer) FrameSpringBeanUtil.getBean(buyerClassName);
     }
