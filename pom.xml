@@ -21,6 +21,7 @@
         <module>design-prototype</module>
         <module>design-builder</module>
         <module>design-strategy</module>
+        <module>design-duty-chain</module>
     </modules>
 
     <properties>
