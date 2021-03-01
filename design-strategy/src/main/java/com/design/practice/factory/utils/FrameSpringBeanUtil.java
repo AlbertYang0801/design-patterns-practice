@@ -3,7 +3,10 @@ package com.design.practice.factory.utils;
 import org.springframework.beans.BeansException;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
+import org.springframework.lang.NonNullApi;
 import org.springframework.stereotype.Component;
+
+import javax.annotation.Nullable;
 
 /**
  * 获取容器内的Bean
@@ -18,14 +21,21 @@ public class FrameSpringBeanUtil implements ApplicationContextAware {
 
     @Override
     public void setApplicationContext(ApplicationContext app) throws BeansException {
-        applicationContext = app;
+       applicationContext = app;
     }
 
+    /**
+     * 根据类名字符串从容器中获取实例对象
+     * @param name 类名，首字母小写
+     */
     @SuppressWarnings("unchecked")
     public static <T> T getBean(String name) {
         return (T) applicationContext.getBean(name);
     }
 
+    /**
+     * 根据类名从容其中获取类
+     */
     public static <T> T getBean(Class<T> cls) {
         return applicationContext.getBean(cls);
     }
