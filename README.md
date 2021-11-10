@@ -34,30 +34,30 @@
 
 ### 设计模式三大类型
 
-#### 1.创建型模式
+#### 1.创建型模式(design-create)
 
-* 单例模式(design-single)
+* 单例模式
 
 >序列化和反序列化
 
-* 工厂模式(design-factory)
+* 工厂模式
 
-* 抽象工厂模式(design-factory)
+* 抽象工厂模式
 
-* 原型模式(design-prototype)
+* 原型模式
 
 >浅拷贝和深拷贝
 
-* 建造者模式(design-builder)
+* 建造者模式
 
 >手写lombok表达式的@builder注解源码
 
-#### 2.结构型模式
+#### 2.结构型模式(design-structural)
 
 
-#### 3.行为型模式
+#### 3.行为型模式(design-behavioral)
 
-* 策略模式(design-strategy)
+* 策略模式
 
 >使用工厂模式和策略模式消灭if-else
 
