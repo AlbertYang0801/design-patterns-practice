@@ -56,3 +56,110 @@
 来源：掘金
 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
 
+
+
+
+
+## 模板方法
+
+模板是规定了固定步骤的方法，来实现预期的功能。
+
+![模板模式的 UML 图](https://s2.loli.net/2022/07/27/erd8TSWmDx6fbLi.jpg)
+
+由抽象类（父类）约定有哪几个步骤，并提供模板方法来将步骤组合。
+
+比如：
+
+```java
+setp1();
+setp2();
+
+main(){
+    dosomething();
+    setp1();
+    setp2();
+}
+```
+
+**不可变部分（dosomething) 由父类实现，可变部分 (setp1,setp2) 等由子类实现。**
+
+```java
+//抽象类
+public abstract class AbstractRoom {
+
+    public abstract Integer chooseRoomType(int roomType);
+
+    public abstract void payment(int money);
+
+    /**
+     * 提高外部调用的方法
+     * 规定了方法步骤，类似模板。
+     * 子类去实现模板中的各个步骤。
+     * 可变部分由子类去实现，不可变部分抽象类实现。
+     */
+    public final void getRoom(){
+        System.out.println("欢迎光临");
+        Integer money = chooseRoomType(1);
+        payment(money);
+        System.out.println("谢谢惠顾");
+    }
+
+}
+
+//子类1
+public class LowerRoom extends AbstractRoom {
+    @Override
+    public Integer chooseRoomType(int roomType) {
+        System.out.println("房费固定50");
+        return 50;
+    }
+
+    @Override
+    public void payment(int money) {
+        System.out.println("支付：" + money);
+    }
+
+
+}
+
+//子类2
+public class StarLevelRoom extends AbstractRoom {
+    @Override
+    public Integer chooseRoomType(int roomType) {
+        System.out.println("房费不定");
+        switch (roomType){
+            case 1:
+                return 300;
+            case 2:
+                return 500;
+            case 3:
+                return 1000;
+            default:
+               return 0;
+        }
+    }
+
+    @Override
+    public void payment(int money) {
+        System.out.println("支付："+money);
+    }
+
+
+}
+
+//测试类
+public class TestRoom {
+
+    public static void main(String[] args) {
+        System.out.println("------1.入住星级酒店----------");
+        AbstractRoom starLevelRoom = new StarLevelRoom();
+        starLevelRoom.getRoom();
+        System.out.println("------2.入住低端酒店----------");
+        AbstractRoom lowerRoom = new LowerRoom();
+        lowerRoom.getRoom();
+    }
+
+
+}
+```
+
