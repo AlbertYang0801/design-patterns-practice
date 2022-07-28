@@ -163,3 +163,98 @@ public class TestRoom {
 }
 ```
 
+
+
+## 观察者模式
+
+在一对多的情况下，当一个对象被修改时，通知它所依赖的多个对象，这种就是观察者模式，类似**发布-订阅模式**。
+
+![观察者模式的 UML 图](https://www.runoob.com/wp-content/uploads/2014/08/observer_pattern_uml_diagram.jpg)
+
+核心就是当被观察者修改时，通知观察者。
+
+- 被观察者
+
+  ```java
+  public class Subject {
+  
+      /**
+       * 观察者列表
+       */
+      private final List<Observer> observerList=new ArrayList<>();
+  
+      private int state;
+  
+      public int getState() {
+          return state;
+      }
+  
+      public void setState(int state) {
+          this.state = state;
+          //更改状态时，通知所有观察者
+          notifyAllObservers();
+      }
+  
+      public void attach(Observer observer){
+          observerList.add(observer);
+      }
+  
+      //通知所有观察者
+      public void notifyAllObservers(){
+          observerList.forEach(Observer::update);
+      }
+  
+  }
+  
+  ```
+
+- 观察者
+
+  ```java
+  public abstract class Observer {
+  
+      protected Subject subject;
+  
+      public abstract void update();
+  
+  }
+  
+  public class BinaryObserver extends Observer {
+      public BinaryObserver(Subject subject){
+          this.subject=subject;
+          //添加观察者
+          this.subject.attach(this);
+      }
+  
+      @Override
+      public void update() {
+          System.out.println("Binary Info:"+Integer.toBinaryString(subject.getState()).toLowerCase());
+      }
+  }
+  ```
+
+- 测试类
+
+  ```java
+  public class TestObserver {
+  
+      public static void main(String[] args) {
+          //被观察者
+          Subject subject = new Subject();
+  
+          //观察者
+          new BinaryObserver(subject);
+          new HexaObserver(subject);
+          new OctalObserver(subject);
+  
+          System.out.println("-----------------2--------------------");
+          subject.setState(2);
+  
+          System.out.println("-----------------10------------------");
+          subject.setState(10);
+      }
+  
+  }
+  ```
+
+  
