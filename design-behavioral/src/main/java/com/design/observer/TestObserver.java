@@ -5,6 +5,7 @@ import com.design.observer.impl.HexaObserver;
 import com.design.observer.impl.OctalObserver;
 
 /**
+ * 观察者模式
  * @author yjw
  * @date 2022/7/28 23:35
  */

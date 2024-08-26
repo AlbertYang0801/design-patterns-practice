@@ -1,7 +1,6 @@
 package com.design.principle.demeter.solved.service;
 
-import com.albert.utils.jackson.JsonUtil;
-import com.design.principle.demeter.solved.vo.CollegeEmployee;
+import cn.hutool.json.JSONUtil;
 import com.design.principle.demeter.solved.vo.SchoolEmployee;
 import com.google.common.collect.Lists;
 
@@ -18,7 +17,7 @@ public class SchoolManager {
     public void printSchoolAllEmployee(CollegeManager collegeManager){
         //获取学校总部人员信息
         List<SchoolEmployee> schoolEmployeeList = this.getSchoolEmployeeList();
-        System.out.println("学校总部人员的信息为:"+JsonUtil.toString(schoolEmployeeList));
+        System.out.println("学校总部人员的信息为:"+ JSONUtil.toJsonStr(schoolEmployeeList));
         //打印学院人员信息，不和CollegeEmployee类产生耦合
         collegeManager.printCollegeEmployee();
     }

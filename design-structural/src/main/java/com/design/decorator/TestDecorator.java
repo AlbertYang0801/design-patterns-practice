@@ -5,6 +5,7 @@ import com.design.decorator.impl.MusicRobot;
 import com.design.decorator.impl.WeatherDecoratorRobot;
 
 /**
+ * 装饰器模式
  * @author yjw
  * @date 2022/7/27 22:05
  */

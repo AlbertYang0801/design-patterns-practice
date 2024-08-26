@@ -1,6 +1,7 @@
 package com.design.adapter;
 
 /**
+ * 适配器模式
  * @author yjw
  * @date 2022/7/27 22:23
  */

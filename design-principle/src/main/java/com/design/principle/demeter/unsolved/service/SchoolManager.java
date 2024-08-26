@@ -1,6 +1,6 @@
 package com.design.principle.demeter.unsolved.service;
 
-import com.albert.utils.jackson.JsonUtil;
+import cn.hutool.json.JSONUtil;
 import com.design.principle.demeter.unsolved.vo.CollegeEmployee;
 import com.design.principle.demeter.unsolved.vo.SchoolEmployee;
 import com.google.common.collect.Lists;
@@ -18,11 +18,11 @@ public class SchoolManager {
     public void printSchoolAllEmployee(CollegeManager collegeManager){
         //获取学校总部人员信息
         List<SchoolEmployee> schoolEmployeeList = this.getSchoolEmployeeList();
-        System.out.println("学校总部人员的信息为:"+JsonUtil.toString(schoolEmployeeList));
+        System.out.println("学校总部人员的信息为:"+ JSONUtil.toJsonStr(schoolEmployeeList));
         //获取学院的人员信息
         //CollegeEmployee作为局部变量，不是当前类的直接朋友，违反了迪米特原则(产生了非直接朋友的耦合)
         List<CollegeEmployee> collegeEmployeeList = collegeManager.getCollegeEmployeeList();
-        System.out.println("学院人员的信息为:"+JsonUtil.toString(collegeEmployeeList));
+        System.out.println("学院人员的信息为:"+JSONUtil.toJsonStr(collegeEmployeeList));
     }
 
     /**
