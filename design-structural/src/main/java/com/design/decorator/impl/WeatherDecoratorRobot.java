@@ -4,15 +4,23 @@ import com.design.decorator.DecoratorRobot;
 import com.design.decorator.Robot;
 
 /**
+ * 采用继承的方式装饰，扩展功能
  * @author yjw
  * @date 2022/7/27 22:01
  */
 public class WeatherDecoratorRobot extends DecoratorRobot {
 
+    /**
+     * 组合方式集成待装饰类
+     * @param decoratorRobot
+     */
     public WeatherDecoratorRobot(Robot decoratorRobot) {
         super(decoratorRobot);
     }
 
+    /**
+     * 重写方法，扩展对象功能
+     */
     @Override
     public void name() {
         super.name();

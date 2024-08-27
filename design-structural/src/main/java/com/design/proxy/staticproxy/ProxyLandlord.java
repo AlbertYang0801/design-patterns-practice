@@ -17,9 +17,9 @@ public class ProxyLandlord implements RentSubject {
 
     @Override
     public void findHouse(int money) {
-        getProxyMoney(money);
-        rentSubject.findHouse(money);
-        return;
+        //收完中介费
+        int proxyMoney = getProxyMoney(money);
+        rentSubject.findHouse(proxyMoney);
     }
 
     /**
