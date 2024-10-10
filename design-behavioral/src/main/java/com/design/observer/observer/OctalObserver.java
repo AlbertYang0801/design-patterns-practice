@@ -1,4 +1,4 @@
-package com.design.observer.impl;
+package com.design.observer.observer;
 
 import com.design.observer.Observer;
 import com.design.observer.Subject;

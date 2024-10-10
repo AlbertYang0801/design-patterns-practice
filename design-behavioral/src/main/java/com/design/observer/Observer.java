@@ -6,8 +6,11 @@ package com.design.observer;
  */
 public abstract class Observer {
 
-    protected Subject subject;
+    public Subject subject;
 
+    /**
+     * 观察者们根据被观察者的状态做出相应的变化
+     */
     public abstract void update();
 
 }

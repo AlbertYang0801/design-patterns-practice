@@ -1,4 +1,4 @@
-package com.design.observer.impl;
+package com.design.observer.observer;
 
 import com.design.observer.Observer;
 import com.design.observer.Subject;
@@ -17,4 +17,5 @@ public class BinaryObserver extends Observer {
     public void update() {
         System.out.println("Binary Info:"+Integer.toBinaryString(subject.getState()).toLowerCase());
     }
+
 }

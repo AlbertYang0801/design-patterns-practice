@@ -1,15 +1,16 @@
 package com.design.observer;
 
-import com.design.observer.impl.BinaryObserver;
-import com.design.observer.impl.HexaObserver;
-import com.design.observer.impl.OctalObserver;
+import com.design.observer.observer.BinaryObserver;
+import com.design.observer.observer.HexaObserver;
+import com.design.observer.observer.OctalObserver;
 
 /**
  * 观察者模式
+ *
  * @author yjw
  * @date 2022/7/28 23:35
  */
-public class TestObserver {
+public class ObserverTest {
 
     public static void main(String[] args) {
         //被观察者
@@ -26,5 +27,6 @@ public class TestObserver {
         System.out.println("-----------------10------------------");
         subject.setState(10);
     }
+
 
 }

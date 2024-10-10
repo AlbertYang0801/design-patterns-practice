@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * 被观察者
+ *
  * @author yjw
  * @date 2022/7/28 23:23
  */
@@ -12,7 +14,7 @@ public class Subject {
     /**
      * 观察者列表
      */
-    private final List<Observer> observerList=new ArrayList<>();
+    private final List<Observer> observerList = new ArrayList<>();
 
     private int state;
 
@@ -20,20 +22,24 @@ public class Subject {
         return state;
     }
 
+    /**
+     * 需要观察的状态
+     *
+     * @param state
+     */
     public void setState(int state) {
         this.state = state;
         //更改状态时，通知所有观察者
         notifyAllObservers();
     }
 
-    public void attach(Observer observer){
+    public void attach(Observer observer) {
         observerList.add(observer);
     }
 
-    public void notifyAllObservers(){
+    public void notifyAllObservers() {
         observerList.forEach(Observer::update);
     }
-
 
 
 }
